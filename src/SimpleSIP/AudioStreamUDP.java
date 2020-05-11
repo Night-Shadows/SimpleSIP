@@ -1,3 +1,5 @@
+package SimpleSIP;
+
 import java.io.*;
 import java.net.*;
 
@@ -110,7 +112,7 @@ class Receiver implements Runnable {
     } catch (SocketTimeoutException ste) {
       System.out.println("Receive call timed out");
     } catch (SocketException se) {
-      System.out.println("Receiver socket is closed");
+      System.out.println("SimpleSIP.Receiver socket is closed");
       // If the thread is blocked in a receive call, an exception is thrown when
       // the socket is closed, causing the thread to unblock.
     } catch (Exception e) {
@@ -254,7 +256,7 @@ class Sender implements Runnable {
         }
       }
     } catch (SocketException se) {
-      System.out.println("Sender socket is closed");
+      System.out.println("SimpleSIP.Sender socket is closed");
       // Exception is thrown if socket is closed before last call to send.
     } catch (Exception e) {
       e.printStackTrace();

@@ -1,3 +1,5 @@
+package SimpleSIP;
+
 import java.io.BufferedReader;
 import java.io.PrintWriter;
 import java.net.InetAddress;
@@ -91,17 +93,17 @@ public class StateHandler {
 
     public void printState() {
         if(state instanceof Free) {
-            System.out.println("State is Free");
+            System.out.println("SimpleSIP.State is SimpleSIP.Free");
         } else if(state instanceof Connecting) {
-            System.out.println("State is Connecting");
+            System.out.println("SimpleSIP.State is SimpleSIP.Connecting");
         } else if(state instanceof Waiting) {
-            System.out.println("State is Waiting");
+            System.out.println("SimpleSIP.State is SimpleSIP.Waiting");
         } else if(state instanceof CallEstablished) {
-            System.out.println("State is CallEstablished");
+            System.out.println("SimpleSIP.State is SimpleSIP.CallEstablished");
         } else if(state instanceof Quitting) {
-            System.out.println("State is Quitting");
+            System.out.println("SimpleSIP.State is SimpleSIP.Quitting");
         } else {
-            System.out.println("State is UNKNOWN");
+            System.out.println("SimpleSIP.State is UNKNOWN");
         }
     }
 }

@@ -1,3 +1,5 @@
+package SimpleSIP;
+
 import java.io.PrintWriter;
 
 public class Free extends State {
@@ -26,7 +28,7 @@ public class Free extends State {
 
     private void printState() {
         System.out.println("- - - - - - - - - - - - - - - - - -");
-        System.out.println("| Current state: Free             |");
+        System.out.println("| Current state: SimpleSIP.Free             |");
         System.out.println("- - - - - - - - - - - - - - - - - -");
     }
 

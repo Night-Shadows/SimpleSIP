@@ -1,6 +1,7 @@
+package SimpleSIP;
+
 import java.io.IOException;
 import java.net.ServerSocket;
-import java.net.SocketException;
 
 public class SimpleSIPMain {
     public static void main(String[] args) {
@@ -14,7 +15,7 @@ public class SimpleSIPMain {
         try {
             port = Integer.parseInt(args[0]);
             serverSocket = new ServerSocket(port);
-            System.out.println("Waiting for a connection...");
+            System.out.println("SimpleSIP.Waiting for a connection...");
         } catch (IOException e) {
             System.err.println("Could not listen on port " + port);
             System.exit(1);

@@ -1,3 +1,5 @@
+package SimpleSIP;
+
 import java.io.IOException;
 import java.net.Socket;
 
@@ -9,7 +11,7 @@ public class Quitting extends State {
 
     @Override
     public State receivedOKsendNothing(Socket clientSocket) {
-        // TODO: Received OK in Quitting state, return nothing and end the call
+        // TODO: Received OK in SimpleSIP.Quitting state, return nothing and end the call
         System.out.println("Received OK, now available");
         try {
             if(clientSocket != null)
@@ -22,7 +24,7 @@ public class Quitting extends State {
 
     private void printState() {
         System.out.println("- - - - - - - - - - - - - - - - - -");
-        System.out.println("| Current state: Quitting         |");
+        System.out.println("| Current state: SimpleSIP.Quitting         |");
         System.out.println("- - - - - - - - - - - - - - - - - -");
     }
 }

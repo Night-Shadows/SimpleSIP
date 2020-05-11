@@ -1,7 +1,8 @@
+package SimpleSIP;
+
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class Waiting extends State {
     public Waiting() {
@@ -17,7 +18,7 @@ public class Waiting extends State {
 
     private void printState() {
         System.out.println("- - - - - - - - - - - - - - - - - -");
-        System.out.println("| Current state: Waiting          |");
+        System.out.println("| Current state: SimpleSIP.Waiting          |");
         System.out.println("- - - - - - - - - - - - - - - - - -");
     }
 }

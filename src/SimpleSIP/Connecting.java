@@ -1,8 +1,9 @@
+package SimpleSIP;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class Connecting extends BusyState {
 
@@ -29,7 +30,7 @@ public class Connecting extends BusyState {
 
     private void printState() {
         System.out.println("- - - - - - - - - - - - - - - - - -");
-        System.out.println("| Current state: Connecting       |");
+        System.out.println("| Current state: SimpleSIP.Connecting       |");
         System.out.println("- - - - - - - - - - - - - - - - - -");
     }
 }

@@ -1,11 +1,9 @@
-import javax.sound.sampled.AudioFormat;
+package SimpleSIP;
+
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.io.Serializable;
-import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.Socket;
-import java.net.SocketException;
 
 public class CallEstablished extends BusyState {
     private InetAddress serverIp;
@@ -87,7 +85,7 @@ public class CallEstablished extends BusyState {
 
     private void printState() {
         System.out.println("- - - - - - - - - - - - - - - - - -");
-        System.out.println("| Current state: CallEstablished  |");
+        System.out.println("| Current state: SimpleSIP.CallEstablished  |");
         System.out.println("- - - - - - - - - - - - - - - - - -");
     }
 }
